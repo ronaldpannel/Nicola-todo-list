@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: o;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -38,12 +38,12 @@ form button:hover {
   color: white;
   background-color: #d88771;
 }
-.todoContainer {
+.todo-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.todoList {
+.todo-list {
   min-width: 40%;
   list-style: none;
 }
@@ -59,9 +59,11 @@ form button:hover {
 }
 .todo li {
   flex: 1;
+  padding: 0 10px;
 }
-.deleteBtn,
-.completeBtn {
+.trash-btn, 
+.complete-btn
+ {
   background-color: #ff6f47;
   color: white;
   border: none;
@@ -69,13 +71,13 @@ form button:hover {
   font-size: 1rem;
   cursor: pointer;
 }
-.completeBtn {
+.complete-btn {
   background-color: green;
 }
-.todoItem {
+.todo-item {
   padding: 0rem 0.5rem;
 }
-.fa-trash-can,
+.fa-trash,
 .fa-check {
   pointer-events: none;
 }
@@ -87,7 +89,7 @@ form button:hover {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
-form{
+form {
   display: flex;
   flex-wrap: wrap;
 }
@@ -120,21 +122,13 @@ select {
   pointer-events: none;
   transition: all 0.3s ease-in-out;
 }
-.select:hover::after{
+.select:hover::after {
   background-color: white;
   color: #ff6f47;
 }
 
-@media screen and (max-width: 400px){
-  header{
+@media screen and (max-width: 400px) {
+  header {
     font-size: 1rem;
   }
 }
-
-
-
-
-
-
-
-
